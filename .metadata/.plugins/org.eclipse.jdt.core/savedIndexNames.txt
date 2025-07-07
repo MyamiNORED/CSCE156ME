@@ -1,0 +1,19 @@
+INDEX VERSION 1.134+/home/myami/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+119049227.index
+2830707860.index
+2663057336.index
+3416437994.index
+1957933672.index
+386235910.index
+1747374047.index
+2825969955.index
+1992209571.index
+294718560.index
+1877948853.index
+2687120258.index
+577963289.index
+3744917704.index
+3853419092.index
+1768190171.index
+1901198469.index
+2766636593.index
