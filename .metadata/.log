@@ -345,3 +345,443 @@ java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclip
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2025-07-09 13:48:02.332
+!MESSAGE No IModelProvider exists for project P/Hello of version: null
+!STACK 0
+java.lang.NullPointerException: No IModelProvider exists for project P/Hello of version: null
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:101)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getModelProvider(ModelProviderManager.java:281)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:77)
+	at org.eclipse.jst.jee.ui.internal.navigator.Ear5ContentProvider.getNewContentProviderInstance(Ear5ContentProvider.java:158)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-07-09 13:48:02.342
+!MESSAGE An internal error occurred during: "Loading descriptor for Hello.".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jst.j2ee.model.IModelProvider.addListener(org.eclipse.jst.j2ee.model.IModelProviderListener)" because "provider" is null
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedModelProvider(JEE5ContentProvider.java:78)
+	at org.eclipse.jst.jee.ui.internal.navigator.Ear5ContentProvider.getNewContentProviderInstance(Ear5ContentProvider.java:158)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.007
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.008
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.009
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.010
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.010
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.010
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.143
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.143
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.143
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.rename
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 13:54:01.143
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.move
+
+!ENTRY org.eclipse.ui.workbench 4 0 2025-07-09 13:54:14.685
+!MESSAGE There is no handler to execute for command org.eclipse.ui.file.import
+!STACK 0
+org.eclipse.core.commands.NotHandledException: There is no handler to execute for command org.eclipse.ui.file.import
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:501)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:141)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5862)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5077)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2025-07-09 13:54:20.645
+!MESSAGE There is no handler to execute for command org.eclipse.ui.file.import
+!STACK 0
+org.eclipse.core.commands.NotHandledException: There is no handler to execute for command org.eclipse.ui.file.import
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:501)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:141)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5862)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5077)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.782
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.783
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.787
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.788
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.788
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.788
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.837
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.838
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.838
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.rename
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:16.838
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.move
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.707
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.707
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.708
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.708
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.708
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.708
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 14:00:19.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.705
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.705
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.709
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.744
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.745
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.745
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.rename
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:37.746
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.move
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.312
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.312
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.313
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.313
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.313
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.313
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.313
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:40.314
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.350
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.351
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.353
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.354
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.354
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.354
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.432
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.433
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.515
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.516
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.521
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.522
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.566
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.567
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.567
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.rename
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:48.567
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.move
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.789
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.790
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.849
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.849
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.849
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.rename
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:50.849
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.jst.jsp.ui.refactor.move
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:58.937
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleBlockSelectionMode
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:58.939
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toMultiSelection
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:59.712
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.nextSibling
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:59.713
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.previousSibling
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:59.971
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.nextSibling
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:12:59.972
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.previousSibling
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:01.763
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleWordWrap
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:01.795
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleShowWhitespaceCharacters
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:01.795
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomIn
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:01.796
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomOut
+
+!ENTRY org.eclipse.ui.workbench 4 0 2025-07-09 15:13:09.344
+!MESSAGE There is no handler to execute for command org.eclipse.ui.window.closeAllPerspectives
+!STACK 0
+org.eclipse.core.commands.NotHandledException: There is no handler to execute for command org.eclipse.ui.window.closeAllPerspectives
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:501)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:141)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5862)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5077)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:10.874
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleWordWrap
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:10.875
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleShowWhitespaceCharacters
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:10.875
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomIn
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:10.876
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomOut
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:11.855
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleWordWrap
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:11.856
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleShowWhitespaceCharacters
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:11.856
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomIn
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:11.856
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomOut
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:12.485
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleWordWrap
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:12.486
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.toggleShowWhitespaceCharacters
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:12.487
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomIn
+
+!ENTRY org.eclipse.ui 4 4 2025-07-09 15:13:12.488
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.ui.edit.text.zoomOut
+
+!ENTRY org.eclipse.ui 2 0 2025-07-09 15:13:25.200
+!MESSAGE Failed to execute org.eclipse.ui.perspectives.showPerspective
+!STACK 0
+org.eclipse.core.commands.NotHandledException: There is no handler to execute for command org.eclipse.ui.perspectives.showPerspective
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:501)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
+	at org.eclipse.ui.internal.ChangeToPerspectiveMenu.run(ChangeToPerspectiveMenu.java:87)
+	at org.eclipse.ui.actions.PerspectiveMenu.run(PerspectiveMenu.java:348)
+	at org.eclipse.ui.actions.OpenPerspectiveAction.runWithEvent(OpenPerspectiveAction.java:72)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5862)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1656)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5077)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4522)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)

@@ -1,0 +1,169 @@
+
+CSCE156ME - COMPUTER SCIENCE II - Spring 2025
+Progress Tracker
+
+------------------------------------------
+Module 1 – Introduction
+------------------------------------------
+[ ] Week 1 (Jan 20–24)
+    - W: Course Intro/Java Basics (video)[*]
+    - F: Java basics, conditionals, loops (video)
+    - Lab 1.0: Intro to Java/Python [*]
+    - Watch: Getting Started videos 0.1 - 0.3 --> a good list 
+        [*]0.1 -Lab 1.0 walkthrough
+        [*]0.2 - eclipse + git
+        [*]0.3 - project setup 
+    - Read : Syllabus [*]
+	
+
+[ ] Week 2 (Jan 27–31)
+    - M: Java loops, collections (video)
+        [*]
+    - W: Java: Strings, methods (video)
+        [*]
+    - F: Java: Exceptions, File I/O (video)
+        [*] - Lab 2.0: Conditionals & Loops
+    - Watch: Quick Intro to Java videos 1.1 - 1.13
+
+        [*] - 1.1 Quik into to java
+        [*] - 1.2 variables ,Operators ,& output
+        [*] - 1.3 conditionals and loops
+        [*] - 1.4 Arrays and Collections
+        [*] - 1.5 Strings
+        [*] - 1.6 Methods
+        [*] - 1.7 File I/O
+        [*] - 1.8 Searching And Sorting
+        [*] - 1.9 Error Handling`
+        [*] - 1.10 Classes  
+        [*] - 1.11 Exercise : String Entropy
+        [*] - 1.12 Exercise : Password Cracking
+        [*] - 1.13 Exercise : Ranked Voting
+
+[ ] Week 3 (Feb 3–7)
+    - M: Searching and Sorting in Java, OOP: Java classes (video)
+    - W: Java Classes, Exercises (video)
+    - F: OOP (video)
+    - Lab 3.0: Strings & File I/O
+    - Assignment 0.0 due
+
+------------------------------------------
+Module 2 – Object Oriented Programming
+------------------------------------------
+[ ] Week 4 (Feb 10–14)
+    - M: Technical Writing & Drafting (video)
+    - W: OOP - Inheritance (video)
+    - F: OOP - Inheritance (video)
+    - Lab 4.0: Classes & Constructors
+    - Watch: Barbara Liskov on Liskov substitution
+    - Read: Writing Good Code is Like Writing a Novel, How to Write a Good Software Design Document
+    - Design Document - draft 1 due
+
+[ ] Week 5 (Feb 17–21)
+    - M: OOP - Inheritance (video)
+    - W: OOP - Polymorphism (video)
+    - F: Polymorphism (video)
+    - Lab 5.0: Inheritance
+    - Assignment 1.0 due
+
+------------------------------------------
+Module 3 – Databases & SQL
+------------------------------------------
+[ ] Week 6 (Feb 24–28)
+    - M: SQL (video)
+    - W: SQL (video)
+    - F: No Class (workshop)
+    - Lab 6.0: Polymorphism
+    - Watch: Introduction to Databases 3.1 - 3.8
+    - Read: Chapter 3 Computer Science II
+    - Design Doc draft 2 due
+
+[ ] Week 7 (Mar 3–7)
+    - M: SQL (video)
+    - W: Database Design (video)
+    - F: Database Design (video)
+    - Lab 7.0: Intro to SQL I
+    - Assignment 2.0 due
+
+[ ] Week 8 (Mar 10–14)
+    - M: Database Design, JDBC (video)
+    - W: JDBC (video)
+    - F: JDBC (video)
+    - Lab 8.0: Intro to SQL II
+    - Assignment 3.0 due
+
+[ ] Spring Break (Mar 17–21)
+
+------------------------------------------
+Module 4 – List Data Structures
+------------------------------------------
+[ ] Week 9 (Mar 24–28)
+    - M: Lists (video)
+    - W: Lists (video)
+    - F: Lists (video)
+    - Lab 9.0: JDBC in a Webapp I
+    - Watch: List-Based Data Structures Parts 4.1 - 4.4
+    - Read: Chapter 4 of Computer Science II
+    - Design Doc draft 3 due
+
+[ ] Week 10 (Mar 31–Apr 4)
+    - M: Linked Lists (video)
+    - W: Linked Lists, Stacks (video)
+    - F: No Class (conference)
+    - Lab 10.0: JDBC in a Webapp II
+    - Assignment 4.0 due
+
+------------------------------------------
+Module 5 – Algorithms & Analysis
+------------------------------------------
+[ ] Week 11 (Apr 7–11)
+    - M: Algorithm Analysis (video)
+    - W: Algorithm Analysis (video)
+    - F: Algorithm Analysis (video)
+    - Lab 11.0: Linked Lists
+    - Watch: Algorithms & Analysis Parts 5.1 – 5.4.4
+    - Read: Chapter 5 of Computer Science II
+    - Design Doc draft 4 due
+
+[ ] Week 12 (Apr 14–18)
+    - M: Asymptotics (video)
+    - W: Recursive Algorithm Analysis (video)
+    - F: Trees (video)
+    - Lab 13.0: Sorting
+    - Assignment 5.0 due
+
+------------------------------------------
+Module 6 – Trees & Tree Data Structures
+------------------------------------------
+[ ] Week 13 (Apr 21–25)
+    - M: Trees (video)
+    - W: Tree traversals (video)
+    - F: BSTs (video)
+    - Lab 14.0: Stacks & Queues
+    - Watch: Trees-Based Data Structures Parts 6.1 – 6.6
+    - Read: Chapter 6 of Computer Science II
+    - Design doc - final draft due
+
+[ ] Week 14 (Apr 28–May 2)
+    - M: BSTs (video)
+    - W: Heaps (video)
+    - F: No Class
+    - Lab 15.0: Binary Search Trees
+    - Assignment 6.0 due
+
+[ ] Week 15 (May 5–9)
+    - M: Course Retrospective (video)
+    - W: No Class
+    - F: No Class
+    - Lab: wrap up
+    - Final Design Document due
+    - Assignment 7.0 due
+    - Course Post-Survey due
+
+------------------------------------------
+Other Resources
+------------------------------------------
+- Getting Help & Instructor Info
+- Course FAQ
+- Libraries, Office 365, OneDrive, YuJa, Lucid, etc.
+
+
